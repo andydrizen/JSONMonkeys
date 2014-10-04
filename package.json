@@ -1,10 +1,10 @@
 {
-    "name": "JSON Monkeys",
+    "name": "JSONMonkeys",
     "version": "0.0.1",
     "description": "We'll mess with your backend.",
     "main": "index.js",
     "dependencies": {
-        "node-simple-router": ""
+        "http" : ""
     },
     "repository": {
         "type": "git",

@@ -6,8 +6,8 @@ exports.monkeyWork = function(JSONString) {
         exports.Garble,
         exports.Null,
         exports.Opposite,
-        exports.Passive,
-        exports.Swap
+        exports.Swap,
+        exports.Passive
     ];
 
     var content = {};
@@ -58,10 +58,10 @@ exports.Empty = function(object) {
     else if (typeof object === "string") {
         object = "";
     }
-    else if (Array.isArray(object)) {
+    else if (Array.isArray(object) && Math.random() < 0.2) {
         object = [];
     }
-    else if (typeof object === "object") {
+    else if (typeof object === "object" && Math.random() < 0.2) {
         object = {};
     }
     else if (typeof object === "number") {
@@ -107,10 +107,10 @@ exports.Swap = function(object) {
     else if (typeof object === "string") {
         object = [object];
     }
-    else if (Array.isArray(object)) {
+    else if (Array.isArray(object) && Math.random() < 0.2) {
         object = object[0];
     }
-    else if (typeof object === "object") {
+    else if (typeof object === "object" && Math.random() < 0.2) {
         object = [];
     }
     else if (typeof object === "number") {
